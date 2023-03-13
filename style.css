@@ -1,0 +1,59 @@
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.content {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.content dt {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content dt:hover:before {
+  content: '#';
+  display: inline-block;
+  color: slategray;
+}
+
+.content .item {
+  margin: 10px;
+  padding: 10px;
+}
+
+.content .item.selected {
+  background-color: #F3FFCC;
+  border: 1px solid rgba(0, 0, 0, .1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.content dd .evo {
+  color: darkkhaki;
+}
+.content dd .usage {
+  color: teal;
+}
+.content dd .evo:before {
+  content: 'Evolución: ';
+  font-style: italic;
+}
+
+.content dd .usage:before {
+  content: 'Uso: ';
+  font-style: italic;
+}
+
+.note {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  margin-top: 40px;
+  background-color: slategray;
+  color: #fff;
+  text-align: left;
+}
