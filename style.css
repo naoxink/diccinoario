@@ -2,25 +2,32 @@ body {
   font-size: 16px;
   font-family: sans-serif;
 }
+
 .content {
-  width: 500px;
+  width: 666px;
   margin: 0 auto;
 }
 
 .content dt {
   font-weight: bold;
   cursor: pointer;
+  position: relative;
+  padding: 0 15px 15px 15px;
 }
 
 .content dt:hover:before {
   content: '#';
   display: inline-block;
+  position: absolute;
+  left: 0;
   color: slategray;
 }
 
 .content .item {
   margin: 10px;
   padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, .2) 0px 2px 5px;
 }
 
 .content .item.selected {
@@ -36,9 +43,11 @@ body {
 .content dd .evo {
   color: darkkhaki;
 }
+
 .content dd .usage {
   color: teal;
 }
+
 .content dd .evo:before {
   content: 'Evolución: ';
   font-style: italic;
@@ -56,4 +65,12 @@ body {
   background-color: slategray;
   color: #fff;
   text-align: left;
+}
+
+#input-search {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  color: #333;
 }
